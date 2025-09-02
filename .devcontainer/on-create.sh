@@ -25,5 +25,17 @@ if [ -f "$CRED_SOURCE_FILE" ]; then
     echo "Credentials restored and permissions set."
 fi
 
-# echo "installing postgres-client..."
-# apt-get update && apt-get install -y postgresql-client
+PGPASS_SOURCE_PATH="/workspaces/postgres-devcontainer/.devcontainer/.secrets/.pgpass"
+VSCODE_HOME="/home/vscode"
+PGPASS_DEST_PATH="${VSCODE_HOME}/.pgpass"
+
+if [ -f "${PGPASS_SOURCE_PATH}" ]
+then
+    echo "restoring .pgpass file..."
+    cp "${PGPASS_SOURCE_PATH}" "${PGPASS_DEST_PATH}"
+    echo "setting permissions..."
+    chmod 600 "${PGPASS_DEST_PATH}"
+    echo "done"
+else
+    echo "ERROR | cannot find ${PGPASS_SOURCE_PATH}"
+fi
