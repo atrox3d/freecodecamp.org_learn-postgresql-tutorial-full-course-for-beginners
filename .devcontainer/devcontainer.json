@@ -19,7 +19,7 @@
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [9092, 29092],
-	"forwardPorts": [8080],
+	"forwardPorts": [],
 
   // Run commands after the container is created to set up the environment with uv
   // install uv, create .venv if not exist, activate it, sync packages and activate it
