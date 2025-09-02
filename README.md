@@ -3,7 +3,7 @@
 This project contains the necessary configuration to run vscode, postgres and adminer each in its container.
 Once openend in vscode it is possible to run the command "open in devcontainer" to open a remote vscode instance inside docker and use psql from the terminal or adminer from localhost:8080.
 
-# Files not included in the repo
+# *WARNING* - Files not included in the repo
 For obvious security reason I didn't commit sensitive informations, following is the list of files to be added manually.
 
 - .devcontainer/.secrets/password.txt
