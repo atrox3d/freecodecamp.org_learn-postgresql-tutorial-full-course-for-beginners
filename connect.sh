@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-psql -h postgres -U postgres
+psql -h postgres -U postgres ${@}
