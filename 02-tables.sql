@@ -1,7 +1,7 @@
 -- create db
 CREATE DATABASE test;
 
-\c test
+\c test  -- select test db when imported
 
 -- create table
 CREATE TABLE person (

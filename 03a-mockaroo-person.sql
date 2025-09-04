@@ -4,7 +4,7 @@
 -- OR
 -- psql -h postgres -U postgres < mockaroo-person.sql
 
-\c test
+\c test  -- select test db when imported
 
 create table person (
 	id BIGSERIAL NOT NULL PRIMARY KEY,

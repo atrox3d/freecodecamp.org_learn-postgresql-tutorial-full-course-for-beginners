@@ -1,4 +1,4 @@
-\c test
+\c test  -- select test db when imported
 
 SELECT * FROM person LIMIT 10;
 SELECT * FROM person OFFSET 5 LIMIT 10;

@@ -1,4 +1,4 @@
-\c test
+\c test  -- select test db when imported
 
 select country_of_birth 
 FROM person 

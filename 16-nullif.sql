@@ -1,4 +1,4 @@
-\c test
+\c test  -- select test db when imported
 
 SELECT 10 / 0;                          -- ERROR:  division by zero
 

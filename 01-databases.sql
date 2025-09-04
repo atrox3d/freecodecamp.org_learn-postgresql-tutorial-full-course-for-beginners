@@ -5,7 +5,7 @@
 CREATE DATABASE test;
 
 -- connect
-\c test
+\c test  -- select test db when imported
 
 -- delete db
 \c postgres

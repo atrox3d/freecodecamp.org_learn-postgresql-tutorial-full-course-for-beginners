@@ -1,4 +1,4 @@
-\c test
+\c test  -- select test db when imported
 
 -- returns the first non-null parameter
 SELECT COALESCE(1);

@@ -1,4 +1,4 @@
-\c test
+\c test  -- select test db when imported
 
 \echo '--- Query 1: All Males ---'
 SELECT * FROM person where gender = 'Male';

@@ -1,4 +1,4 @@
-\c test
+\c test  -- select test db when imported
 
 
 SELECT make, model, MIN(price), MAX(price)

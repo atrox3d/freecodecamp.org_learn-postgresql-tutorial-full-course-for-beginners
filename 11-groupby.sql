@@ -1,4 +1,4 @@
-\c test
+\c test  -- select test db when imported
 
 
 -- this does nothing
