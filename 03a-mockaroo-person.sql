@@ -1,3 +1,11 @@
+-- \i mockaroo-person.sql
+-- OR
+-- psql -h postgres -U postgres -f mockaroo-person.sql
+-- OR
+-- psql -h postgres -U postgres < mockaroo-person.sql
+
+\c test
+
 create table person (
 	id BIGSERIAL NOT NULL PRIMARY KEY,
 	first_name VARCHAR(50),
